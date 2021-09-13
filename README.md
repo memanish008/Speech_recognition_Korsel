@@ -1,7 +1,8 @@
 # Kørsel Speech Recognition
 
-This repository contains the source code and models used for the speech recognition implemented on a Korsel robot.  
-
+This repository contains the source code and models used for the speech recognition implemented on a Korsel robot. 
+ 
+![Korsel Robot](images\korsel_robot.jpg)
 
 ## Description of the project
 
@@ -16,8 +17,8 @@ Edge impluse is used as the development flatform. Loading the sample data, pre-p
  and building the model .zip file, all are performed in edge impluse         
 
 ## Data Collection
-We used the Google Speech Commands dataset which has 65,000 one-second long utterances of sets of thirty short words. This was obtained from the link [here](http://download.tensorflow.org/data/speech_commands_v0.02.tar.gz)
-In additon to these samples, we have also collected some cumstom backgrond noise of the the robot using mobile phone. This can be found in the sample data folder in our repository.
+We used the Google Speech Commands dataset which has 65,000 one-second long utterances of sets of thirty short words. This was obtained from the link [here](http://download.tensorflow.org/data/speech_commands_v0.02.tar.gz). 
+In additon to these samples, we have also collected some custom backgrond noise of the the robot using mobile phone. This can be found in the sample data folder in our repository.
 
 ## Data Processing.
  The setup procedure for the environment can be found in our repository. 
