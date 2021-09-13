@@ -1,4 +1,4 @@
-# Korsel Speech Recognition
+# Kørsel Speech Recognition
 
 This repository contains the source code and models used for the speech recognition implemented on a Korsel robot.  
 
