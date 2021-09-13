@@ -16,14 +16,14 @@ Arduino Nano 33 BLE Sense has the feature to create ML modules using Tensorflow 
 Edge impluse is used as the development flatform. Loading the sample data, pre-processing them, extracting the features, building the neural architecture for model training, model testing
 and building the model .zip file, all are performed in edge impluse         
 
-## Data Collection
+## Data Collection and Processing
 We used the Google Speech Commands dataset which has 65,000 one-second long utterances of sets of thirty short words. This was obtained from the link [here](http://download.tensorflow.org/data/speech_commands_v0.02.tar.gz). 
 In additon to these samples, we have also collected some custom backgrond noise of the the robot using mobile phone. This can be found in the sample data folder in our repository.
 
 The source code and the instruction of data curation can be found in the link [here](https://github.com/memanish008/ei-keyword-spotting).
 
-## Data Processing.
- The setup procedure for the environment can be found in our repository. 
+## Feature extraction
+It is the process of identifying those components from audio signals that are good in identifying the linguistic content discarding the unnecessary factors like noise. Audio MFCC fature extraction is suited for the human voice.
 
 ## Trained  models 
 The trained model is stored in.zip file. All these files can found in the trained model folder in our repository. 
@@ -36,4 +36,4 @@ then defining its function to control the robot. This final script can be found 
 A series of experiments were performed using differnt neural architecture to obtain the best model for speech recognition. All the models are deployed on the robot to check the performance.
 
 ## Videos  
-The videos of Korsel robot driving using different trained models are available in the Google Drive link [here](https://drive.google.com/drive/folders/1pUV_IysSdNKn0U_R8hXAS0FiaRnUzW44?usp=sharing).
+The videos of the testing the Kørsel robot performance on the track line using different trained models are available in the Google Drive link [here](https://drive.google.com/drive/folders/1pUV_IysSdNKn0U_R8hXAS0FiaRnUzW44?usp=sharing).
