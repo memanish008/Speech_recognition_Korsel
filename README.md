@@ -2,7 +2,7 @@
 
 This repository contains the source code and models used for the speech recognition implemented on a Korsel robot. 
  
-![Korsel Robot](images\korsel_robot.jpg)
+![Korsel Robot](./images/korsel_robot.jpg)
 
 ## Description of the project
 
