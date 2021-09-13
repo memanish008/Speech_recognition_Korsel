@@ -1,4 +1,4 @@
-# Kørsel Speech Recognition
+# Speech Recognition on Kørsel
 
 This repository contains the source code and models used for the speech recognition implemented on a Korsel robot. 
  
@@ -14,11 +14,13 @@ This trained model is deployed in the robot (Kørsel) controlled by Arduino Nano
 Arduino Nano 33 BLE Sense has the feature to create ML modules using Tensorflow Lite.
 
 Edge impluse is used as the development flatform. Loading the sample data, pre-processing them, extracting the features, building the neural architecture for model training, model testing
- and building the model .zip file, all are performed in edge impluse         
+and building the model .zip file, all are performed in edge impluse         
 
 ## Data Collection
 We used the Google Speech Commands dataset which has 65,000 one-second long utterances of sets of thirty short words. This was obtained from the link [here](http://download.tensorflow.org/data/speech_commands_v0.02.tar.gz). 
 In additon to these samples, we have also collected some custom backgrond noise of the the robot using mobile phone. This can be found in the sample data folder in our repository.
+
+The source code and the instruction of data curation can be found in the link [here](https://github.com/memanish008/ei-keyword-spotting).
 
 ## Data Processing.
  The setup procedure for the environment can be found in our repository. 
