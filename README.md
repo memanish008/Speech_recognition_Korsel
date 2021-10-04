@@ -34,8 +34,11 @@ The source code and the instruction of data curation can be found in the link [h
 ## Feature extraction
 It is the process of identifying those components from audio signals that are good in identifying the linguistic content discarding the unnecessary factors like noise. Audio MFCC fature extraction is suited for the human voice.
 
-![MFCC Feature](./images/mfcc_feature_extraction.jpg) <br/><br/>  
+![MFCC Feature](./images/mfcc_feature_extraction.jpg)
 
+"\
+
+"
 
 ## Model Training
 After the data are processed, We train a classifier model with different model architecture in edge impluse. When the training is done, we will see the Model panel at the right side of the page. While starting the training 20% of the data is used for the validation.
