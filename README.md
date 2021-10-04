@@ -35,13 +35,17 @@ It is the process of identifying those components from audio signals that are go
 
 ![MFCC Feature](./images/mfcc_feature_extraction.jpg)
 
-
 ## Model Training
 After the data are processed, We train a classifier model with different model architecture in edge impluse. When the training is done, we will see the Model panel at the right side of the page. While starting the training 20% of the data is used for the validation.
 Also, we use an early stopping startegy on the validation dataset. Data augmentation is also performed while training the models in oder to create an robust models by generating a comprehensive set of data. 
 
+![Model Training](./images/training_output.jpg)
+
+
 ## Model Testing
 The trained model is evaluated on the test dataset. A confusion mattrix is taken in consideration to comapre the testing accuracy of different classes.
+
+![Model Testing](./images/model_testing.jpg)
 
 
 ## Deployment of the model
@@ -51,7 +55,10 @@ The process to deploy the model in nano 33 is
 * In Arduino IDE from sketch toolbar select the Include library and add this .zip file
 * From the File option select examples and then open the model with the filename “nano_ble33_sense_microphone_continuous”
 * make the required modification in the sketch to control the robot and then upload the sketch to the nano 33
+
 All these trained models with the modification can be found in the models folder here in our repository. 
+
+![Model Deployment](./images/model_deployment.jpg)
 
 ## Experiments
 
