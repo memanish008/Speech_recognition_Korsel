@@ -10,6 +10,8 @@ This project intends to provide a simple ML algorithms for speech recognition. T
 We perform different experiment to build a tflite model using different architecture until the sufficient classification accuracies of speech control is achieved.
 The trained models are deployed in the robot (Kørsel) controlled by Arduino Nano 33 BLE Sense and observe the performances on the real environment.
 
+![Korsel Robot](./images/Kørsel driving.gif)
+
 Kørsel is a simple line tracking robot developed at the University of Applied Sciences Ravensburg Weingarten in the Faculty of Electrical Engineering and Computer Science. It is controlled by a Arduino nano and
 has a CNY70 sensor which detects either the black line or the bright/white background. It drives in a zigzag way around tracking line detecting the background color. 
 
