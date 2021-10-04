@@ -19,8 +19,11 @@ and building the model .zip file, all are performed in edge impluse.
 ## Repository Content
 
 **.data/_custom_noise:** - it contains the custom motor noise datas.This is the noise produced by motor when it is in driving mode and is collected using mobile phone.
+
 **.images/** - a few images related to the project.
+
 **.models** - all the trained models for differents experiments performed.
+
 **.src** - contains the scripts written in the Arduino IDE to support the project.  
 
 ## Data Collection and Processing
