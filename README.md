@@ -18,26 +18,36 @@ and building the model .zip file, all are performed in edge impluse.
 
 ## Repository Content
 
-* **data/_custom_noise:** - it contains the custom motor noise datas.This is the noise produced by motor when it is in driving mode and is collected using mobile phone.
+* **data/_custom_noise:** - it contains the custom motor noise datasets. This is the noise produced by motor when the robot is in driving on the trackline and is collected using mobile phone.
 * **images/** - a few images related to the project.
 * **models/** - all the trained models for differents experiments performed.
 * **src/** - contains the scripts written in the Arduino IDE to support the project.  
 
 ## Data Collection and Processing
-We used the Google Speech Commands dataset which has 65,000 one-second long utterances of sets of thirty short words. This was obtained from the link [here](http://download.tensorflow.org/data/speech_commands_v0.02.tar.gz). 
-In additon to these samples, we have also collected some custom backgrond noise of the the robot using mobile phone. This can be found in the sample data folder in our repository.
+We used the Google Speech Commands dataset which has 65,000 one-second long utterances of sets of thirty short words. This can be obtained from the link [here](http://download.tensorflow.org/data/speech_commands_v0.02.tar.gz). 
+In additon to these samples, we have also collected some custom background noise of the the robot using mobile phone. This can be found in the data/_custom_noise folder in our repository.
 
-The source code and the instruction of data curation can be found in the link [here](https://github.com/memanish008/ei-keyword-spotting).
+The source code and the instruction of data curation can be found in the link [here](https://github.com/memanish008/ei-keyword-spotting). 
 
 ## Feature extraction
 It is the process of identifying those components from audio signals that are good in identifying the linguistic content discarding the unnecessary factors like noise. Audio MFCC fature extraction is suited for the human voice.
 
-## Trained  models 
-The trained model is stored in.zip file. All these files can found in the trained model folder in our repository. 
+## Model Training
+After the data are processed, We train a classifier model with different model architecture in edge impluse. When the training is done, we will see the Model panel at the right side of the page. While starting the training 20% of the data is used for the validation.
+Also, we use an early stopping startegy on the validation dataset. Data augmentation is also performed while training the models in oder to create an robust models by generating a comprehensive set of data. 
+
+## Model Testing
+The trained model is evaluated on the test dataset. A confusion mattrix is taken in consideration to comapre the testing accuracy of different classes.
+
 
 ## Deployment of the model
-Before uploading the build model on the robot, we add some scripts to the model sketch to control the robot. This includes catching the target voice command predicted by the model and 
-then defining its function to control the robot. This final script can be found in the trained model folder.
+We can deploy the model back to our device. This makes the model run without internet connection, minimizes latency, and runs with minimum power consumption. Edge impluse can package up the complete impulse in a single arduino library. 
+The process to deploy the model in nano 33 is
+* Download the built .zip Arduino library
+* In Arduino IDE from sketch toolbar select the Include library and add this .zip file
+* From the File option select examples and then open the model with the filename “nano_ble33_sense_microphone_continuous”
+* make the required modification in the sketch to control the robot and then upload the sketch to the nano 33
+All these trained models with the modifcaton can be found in the models folder here in our repository. 
 
 ## Experiments 
 A series of experiments were performed using differnt neural architecture to obtain the best model for speech recognition. All the models are deployed on the robot to check the performance.
