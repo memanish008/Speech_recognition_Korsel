@@ -10,6 +10,9 @@ This project intends to provide a simple ML algorithms for speech recognition. T
 We perform different experiment to build a tflite model using different architecture until the sufficient classification accuracies of speech control is achieved.
 The trained models are deployed in the robot (Kørsel) controlled by Arduino Nano 33 BLE Sense and observe the performances on the real environment.
 
+Kørsel is a simple line tracking robot developed at the University of Applied Sciences Ravensburg Weingarten in the Faculty of Electrical Engineering and Computer Science. It is controlled by a Arduino nano and
+has a CNY70 sensor which detects either the black line or the bright/white background. It drives in a zigzag way around tracking line after detecting the background color. 
+
 Arduino Nano 33 BLE Sense is used as the microcontroller in the robot since it has the feature to create ML modules using Tensorflow Lite.
 Edge impluse is used as the development flatform. Loading the sample data, pre-processing them, extracting the features, building the neural architecture for model training, model testing
 and building the model .zip file, all are performed in edge impluse.      
@@ -50,7 +53,7 @@ All these trained models with the modification can be found in the models folder
 ## Experiments
 
 A series of experiments were performed using differnt neural architecture to obtain the best model for speech recognition. This includes the whole process of data processing, impulse creating, training and building the model, and deploying it on the robot and observing the model performances on real environment.
-In general, we train and build a classifer model for the target voice command. Then while deploying the model some chnages are mad ein the scripts. This includes catching the target voice commands predicted by the model and defining its function to control the robot. For our case, controlling the robot is 
-enabling and disabling the motor on the robot, changing the PWM value to control the driving speed of the motor and blinking different color LEDs for different target voice commands.        
+In general, we train and build a classifer model for the target voice command. Then while deploying the model some changes are made in the scripts. This includes catching the target voice commands predicted by the model and defining its function to control the robot. For our case, controlling the robot is 
+enabling and disabling the motor on the robot, changing the PWM value to control the driving speed of the robot, and blinking different color LEDs for different target voice commands.        
 
 The videos of the testing the Kørsel robot performance on the track line using different trained models are available in the Google Drive link [here](https://drive.google.com/drive/folders/1pUV_IysSdNKn0U_R8hXAS0FiaRnUzW44?usp=sharing).
