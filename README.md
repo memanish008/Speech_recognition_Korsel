@@ -36,7 +36,7 @@ It is the process of identifying those components from audio signals that are go
 
 ![MFCC Feature](./images/mfcc_feature_extraction.jpg)  
 
-
+$~$
 
 ## Model Training
 After the data are processed, We train a classifier model with different model architecture in edge impluse. When the training is done, we will see the Model panel at the right side of the page. While starting the training 20% of the data is used for the validation.
