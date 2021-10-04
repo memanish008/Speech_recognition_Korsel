@@ -3,6 +3,7 @@
 This repository contains the source code and models used for the speech recognition implemented on a Kørsel robot. 
  
 ![Kørsel Robot](./gif/Kørsel_driving.gif)
+<br/><br/>
 
 ## Description of the project
 
@@ -44,14 +45,14 @@ Also, we use an early stopping startegy on the validation dataset. Data augmenta
 
 ![Model Training](./images/training_output.jpg)
 
-
+<br/><br/>
 
 ## Model Testing
 The trained model is evaluated on the test dataset. A confusion mattrix is taken in consideration to comapre the testing accuracy of different classes.
 
 ![Model Testing](./images/model_testing.jpg)
 
-
+<br/><br/>
 
 ## Deployment of the model
 We can deploy the model back to our device. This makes the model run without internet connection, minimizes latency, and runs with minimum power consumption. Edge impluse can package up the complete impulse in a single arduino library. 
@@ -65,7 +66,7 @@ All these trained models with the modification can be found in the models folder
 
 ![Model Deployment](./images/model_deployment.jpg)
 
-
+<br/><br/>
 
 ## Experiments
 
