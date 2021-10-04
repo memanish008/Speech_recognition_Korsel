@@ -24,6 +24,7 @@ and building the model .zip file, all are performed in edge impluse.
 * **models/** - all the trained models for differents experiments performed.
 * **src/** - contains the scripts written in the Arduino IDE to support the project.  
 
+
 ## Data Collection and Processing
 We used the Google Speech Commands dataset which has 65,000 one-second long utterances of sets of thirty short words. This can be obtained from the link [here](http://download.tensorflow.org/data/speech_commands_v0.02.tar.gz). 
 In additon to these samples, we have also collected some custom background noise of the the robot using mobile phone. This can be found in the data/_custom_noise folder in our repository.
@@ -35,6 +36,8 @@ It is the process of identifying those components from audio signals that are go
 
 ![MFCC Feature](./images/mfcc_feature_extraction.jpg)
 
+
+
 ## Model Training
 After the data are processed, We train a classifier model with different model architecture in edge impluse. When the training is done, we will see the Model panel at the right side of the page. While starting the training 20% of the data is used for the validation.
 Also, we use an early stopping startegy on the validation dataset. Data augmentation is also performed while training the models in oder to create an robust models by generating a comprehensive set of data. 
@@ -42,10 +45,12 @@ Also, we use an early stopping startegy on the validation dataset. Data augmenta
 ![Model Training](./images/training_output.jpg)
 
 
+
 ## Model Testing
 The trained model is evaluated on the test dataset. A confusion mattrix is taken in consideration to comapre the testing accuracy of different classes.
 
 ![Model Testing](./images/model_testing.jpg)
+
 
 
 ## Deployment of the model
@@ -59,6 +64,8 @@ The process to deploy the model in nano 33 is
 All these trained models with the modification can be found in the models folder here in our repository. 
 
 ![Model Deployment](./images/model_deployment.jpg)
+
+
 
 ## Experiments
 
