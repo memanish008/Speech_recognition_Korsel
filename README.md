@@ -1,6 +1,6 @@
 # Speech Recognition on Kørsel
 
-This repository contains the source code and models used for the speech recognition implemented on a Korsel robot. 
+This repository contains the source code and models used for the speech recognition implemented on a Kørsel robot. 
  
 ![Kørsel Robot](./gif/Kørsel_driving.gif)
 
@@ -34,7 +34,7 @@ The source code and the instruction of data curation can be found in the link [h
 ## Feature extraction
 It is the process of identifying those components from audio signals that are good in identifying the linguistic content discarding the unnecessary factors like noise. Audio MFCC fature extraction is suited for the human voice.
 
-![MFCC Feature](./images/mfcc_feature_extraction.jpg)
+![MFCC Feature](./images/mfcc_feature_extraction.jpg)  
 
 
 
