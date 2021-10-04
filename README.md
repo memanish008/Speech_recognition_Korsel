@@ -1,4 +1,4 @@
-# Speech Recognition on Kørsel
+ # Speech Recognition on Kørsel
 
 This repository contains the source code and models used for the speech recognition implemented on a Korsel robot. 
  
@@ -9,12 +9,19 @@ This repository contains the source code and models used for the speech recognit
 This project intends to provide a simple ML algorithms for speech recognition. The main task is to modify the Kørsel project and make a small robot with the capability of speech recognition. 
 We perform different experiment to build a tflite model using different architecture until the sufficient classification accuracies of speech control is achieved.
 
-This trained model is deployed in the robot (Kørsel) controlled by Arduino Nano 33 BLE Sense. 
+The trained models are deployed in the robot (Kørsel) controlled by Arduino Nano 33 BLE Sense and observe the performances on the real environment.
 
-Arduino Nano 33 BLE Sense has the feature to create ML modules using Tensorflow Lite.
+Arduino Nano 33 BLE Sense is used as the microcontroller in the robot since it has the feature to create ML modules using Tensorflow Lite.
 
 Edge impluse is used as the development flatform. Loading the sample data, pre-processing them, extracting the features, building the neural architecture for model training, model testing
-and building the model .zip file, all are performed in edge impluse         
+and building the model .zip file, all are performed in edge impluse.      
+
+## Repository Content
+
+**.data/_custom_noise:** - it contains the custom motor noise datas.This is the noise produced by motor when it is in driving mode and is collected using mobile phone.
+**.images/** - a few images related to the project.
+**.models** - all the trained models for differents experiments performed.
+**.src** - contains the scripts written in the Arduino IDE to support the project.  
 
 ## Data Collection and Processing
 We used the Google Speech Commands dataset which has 65,000 one-second long utterances of sets of thirty short words. This was obtained from the link [here](http://download.tensorflow.org/data/speech_commands_v0.02.tar.gz). 
