@@ -32,6 +32,7 @@ In additon to these samples, we have also collected some custom background noise
 
 The source code and the instruction of data curation can be found in the link [here](https://github.com/memanish008/ei-keyword-spotting). 
 
+
 ## Feature extraction
 It is the process of identifying those components from audio signals that are good in identifying the linguistic content discarding the unnecessary factors like noise. Audio MFCC fature extraction is suited for the human voice.
 
@@ -40,8 +41,8 @@ It is the process of identifying those components from audio signals that are go
 <br/><br/>
 
 ## Model Training
-After the data are processed, We train a classifier model with different model architecture in edge impluse. When the training is done, we will see the Model panel at the right side of the page. While starting the training 20% of the data is used for the validation.
-Also, we use an early stopping startegy on the validation dataset. Data augmentation is also performed while training the models in oder to create an robust models by generating a comprehensive set of data. 
+After the data are processed, we train a classifier model with different architecture in edge impluse. When the training is done, we will see the Model panel at the right side of the page. While starting the training 20% of the data is used for the validation.
+Also, we use an early stopping stra  tegy on the validation dataset. Data augmentation is also performed while training the models in oder to create an robust models by generating a comprehensive set of data. 
 
 ![Model Training](./images/training_output.jpg)
 
@@ -72,6 +73,6 @@ All these trained models with the modification can be found in the models folder
 
 A series of experiments were performed using differnt neural architecture to obtain the best model for speech recognition. This includes the whole process of data processing, impulse creating, training and building the model, and deploying it on the robot and observing the model performances on real environment.
 In general, we train and build a classifer model for the target voice command. Then while deploying the model some changes are made in the scripts. This includes catching the target voice commands predicted by the model and defining its function to control the robot. For our case, controlling the robot is 
-enabling and disabling the motor on the robot, changing the PWM value to control the driving speed of the robot, and blinking different color LEDs for different target voice commands.        
+enabling and disabling the motor on the robot, changing the PWM value to control the driving speed of the robot, and blinking different color LEDs for different target voice commands. Through these experiments, we evaluate the performances of the model, find out the issues and estimate the possible ways to e´get rid of it.       
 
 The videos of the testing the Kørsel robot performance on the track line using different trained models are available in the Google Drive link [here](https://drive.google.com/drive/folders/1pUV_IysSdNKn0U_R8hXAS0FiaRnUzW44?usp=sharing).
