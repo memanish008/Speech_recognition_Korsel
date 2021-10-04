@@ -11,7 +11,7 @@ We perform different experiment to build a tflite model using different architec
 The trained models are deployed in the robot (Kørsel) controlled by Arduino Nano 33 BLE Sense and observe the performances on the real environment.
 
 Kørsel is a simple line tracking robot developed at the University of Applied Sciences Ravensburg Weingarten in the Faculty of Electrical Engineering and Computer Science. It is controlled by a Arduino nano and
-has a CNY70 sensor which detects either the black line or the bright/white background. It drives in a zigzag way around tracking line after detecting the background color. 
+has a CNY70 sensor which detects either the black line or the bright/white background. It drives in a zigzag way around tracking line detecting the background color. 
 
 Arduino Nano 33 BLE Sense is used as the microcontroller in the robot since it has the feature to create ML modules using Tensorflow Lite.
 Edge impluse is used as the development flatform. Loading the sample data, pre-processing them, extracting the features, building the neural architecture for model training, model testing
@@ -32,6 +32,7 @@ The source code and the instruction of data curation can be found in the link [h
 
 ## Feature extraction
 It is the process of identifying those components from audio signals that are good in identifying the linguistic content discarding the unnecessary factors like noise. Audio MFCC fature extraction is suited for the human voice.
+![Korsel Robot](./images/mfcc_feature_extraction)
 
 ## Model Training
 After the data are processed, We train a classifier model with different model architecture in edge impluse. When the training is done, we will see the Model panel at the right side of the page. While starting the training 20% of the data is used for the validation.
