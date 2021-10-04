@@ -2,15 +2,13 @@
 
 This repository contains the source code and models used for the speech recognition implemented on a Korsel robot. 
  
-![Korsel Robot](./images/korsel_robot.jpg)
+![Kørsel driving](./gif/Kørsel_driving.gif)
 
 ## Description of the project
 
 This project intends to provide a simple ML algorithms for speech recognition. The main task is to modify the Kørsel project and make a small robot with the capability of speech recognition. 
 We perform different experiment to build a tflite model using different architecture until the sufficient classification accuracies of speech control is achieved.
 The trained models are deployed in the robot (Kørsel) controlled by Arduino Nano 33 BLE Sense and observe the performances on the real environment.
-
-![Kørsel driving](./gif/Kørsel_driving.gif)
 
 Kørsel is a simple line tracking robot developed at the University of Applied Sciences Ravensburg Weingarten in the Faculty of Electrical Engineering and Computer Science. It is controlled by a Arduino nano and
 has a CNY70 sensor which detects either the black line or the bright/white background. It drives in a zigzag way around tracking line detecting the background color. 
