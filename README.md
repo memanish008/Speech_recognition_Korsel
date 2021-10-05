@@ -71,7 +71,7 @@ All these trained models with the modification can be found in the models folder
 ## Experiments
 
 A series of experiments were performed using different neural network architectures to obtain the best model for speech recognition. This includes the whole process of data processing, impulse creating, training and building the model, and deploying it on the robot and observing the model performances on real environment.
-In general, we trained and built a classifer model for the target voice command. Then while deploying the model some changes were made in the scripts. This includes catching the target voice commands predicted by the model and defining its function to control the robot. For our case, controlling the robot were  
+In general, we trained and built a classifer model for the target voice command. Then while deploying the model some changes were made in the scripts. This includes catching the target voice commands predicted by the model and defining its function to control the robot. For our case, controlling the robot were
 enabling and disabling the motor on the robot, changing the PWM value to control the driving speed of the robot, and blinking different color LEDs for different target voice commands. Through these experiments, we evaluated the performances of the model, found out the issues and estimated the possible ways to get rid of it.       
 
 The videos of testing the Kørsel robot performance on the track line using different trained models are available in the Google Drive link [here](https://drive.google.com/drive/folders/1pUV_IysSdNKn0U_R8hXAS0FiaRnUzW44?usp=sharing).
