@@ -2,7 +2,7 @@
 
 This repository contains the source code and models used for the speech recognition implemented on a Kørsel robot. 
 
-![Kørsel Robot](./gif/Kørsel_driving.gif)
+![Kørsel Robot](./assets/Kørsel_driving.gif)
 <br/><br/>
 
 ## Description of the project
@@ -35,7 +35,7 @@ The source code and the instruction of data curation can be found in the link [h
 ## Feature extraction
 It is the process of extraction of features from the audio signals. Audio MFCC feature is extracted since its suited for the human voice.
 
-![MFCC Feature](./images/mfcc_feature_extraction.jpg)
+![MFCC Feature](./assets/mfcc_feature_extraction.jpg)
 
 <br/><br/>
 
@@ -43,14 +43,14 @@ It is the process of extraction of features from the audio signals. Audio MFCC f
 After the data are processed, we train a classifier model with different architecture in edge impluse. When the training is done, we will see the Model panel at the right side of the page. While starting the training 20% of the data is used for the validation.
 Also, we use an early stopping strategy to migitate the overfitting on the training dataset. Data augmentation is also performed while training the models in oder to create robust models by generating a comprehensive set of data. 
 
-![Model Training](./images/training_output.jpg)
+![Model Training](./assets/training_output.jpg)
 
 <br/><br/>
 
 ## Model Testing
 The trained models are evaluated on the test dataset. A confusion matrix is used to compare the testing accuracy of the different classes.
 
-![Model Testing](./images/model_testing.jpg)
+![Model Testing](./assets/model_testing.jpg)
 
 <br/><br/>
 
@@ -64,7 +64,7 @@ The process to deploy the model in nano 33 is
 
 All these trained models with the modification can be found in the models folder [here](https://github.com/memanish008/Speech_recognition_Korsel/tree/main/models) in our repository. 
 
-![Model Deployment](./images/model_deployment.jpg)
+![Model Deployment](./assets/model_deployment.jpg)
 
 <br/><br/>
 
