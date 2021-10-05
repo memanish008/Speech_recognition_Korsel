@@ -8,7 +8,7 @@ This repository contains the source code and models used for the speech recognit
 ## Description of the project
 
 This project intends to provide a simple ML algorithms for speech recognition. The main task is to modify the Kørsel robot and add the speech recognition feature to control the Kørsel robot. 
-We perform different experiment to build a tflite model using different architecture until the sufficient classification accuracies of speech control is achieved.
+We perform different experiments to build a tflite model using different architecture until the sufficient classification accuracies of speech control is achieved.
 The trained models are deployed in the robot (Kørsel) controlled by Arduino Nano 33 BLE Sense and observe the performances on the real environment.
 
 Kørsel is a simple line tracking robot developed at the University of Applied Sciences Ravensburg Weingarten in the Faculty of Electrical Engineering and Computer Science. It is controlled by a Arduino nano and
